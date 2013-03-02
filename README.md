@@ -59,9 +59,12 @@ knife rackspace server create -r 'role[webserver]' --server-name WebServer --nod
 ````
 or for a dataserver
 ````
-knife rackspace server create -r 'role[dataserver]' --server-name WebServer --node-name WebServer --image 5cebb13a-f783-4f8c-8058-c4182c724ccd --flavor 2
+knife rackspace server create -r 'role[dataserver]' --server-name DataServer --node-name DataServer --image 5cebb13a-f783-4f8c-8058-c4182c724ccd --flavor 2
 ````
-
+or for a lamp
+````
+knife rackspace server create -r 'role[lampserver]' --server-name LampServer --node-name LampServer --image 5cebb13a-f783-4f8c-8058-c4182c724ccd --flavor 2
+````
 If something goes wrong and you want to remove the server you can do through the GUI's in RackSpace
  AND OpsCode, or you can just use knife
 ````
