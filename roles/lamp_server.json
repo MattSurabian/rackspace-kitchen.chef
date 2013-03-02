@@ -1,0 +1,47 @@
+{
+    "name": "webserver",
+    "env_run_lists": {
+        "dev": [
+
+        ],
+        "production": [
+
+        ]
+    },
+    "override_attributes": {
+        "rackspace_cloud_backup" : {
+            "api_key": "RACKSPACE_API_KEY_HERE",
+            "username":"RACKSPACE_USERNAME_HERE"
+        },
+        "custom_config":{
+            "domains":[
+                "DOMAIN1.com",
+                "DOMAIN2.net",
+                "DOMAIN3.org"
+            ]
+        }
+    },
+    "run_list": [
+        "recipe[apt::default]",
+        "recipe[apache2::default]",
+        "recipe[php::default]",
+        "recipe[php::module_mysql]",
+        "recipe[apache2::mod_php5]",
+        "recipe[apache2::mod_rewrite]",
+        "recipe[custom-config::setup_apache_conf]",
+        "recipe[mysql::default]",
+        "recipe[mysql::server]",
+        "recipe[git::default]",
+        "recipe[nodejs::default]",
+        "recipe[nodejs::npm]",
+        "recipe[rackspace-cloud-backup::default]",
+        "recipe[iptables::default]",
+        "recipe[iptables::secure_web_config]",
+        "recipe[iptables::secure_data_config]"
+    ],
+    "default_attributes": {
+    },
+    "json_class": "Chef::Role",
+    "description": "Base role for systems handling HTTP traffic",
+    "chef_type": "role"
+}
