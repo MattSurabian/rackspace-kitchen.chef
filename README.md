@@ -50,6 +50,7 @@ Upload your roles to your chef server
 ````
 knife role from file roles/data_server.json
 knife role from file roles/web_server.json
+knife role from file roles/lamp_server.json
 ````
 
 Use the knife rackspace plugin to fire up a new server! (the image hash used corresponds to Ubuntu 12 LTS)
