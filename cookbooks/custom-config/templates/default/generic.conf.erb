@@ -1,0 +1,10 @@
+<VirtualHost *:80>
+DocumentRoot /mnt/www/<%= @domain_name %>/prod
+ServerName <%= @domain_name %>
+ServerAlias www.<%= @domain_name %>
+</VirtualHost>
+
+<VirtualHost *:80>
+DocumentRoot /mnt/www/<%= @domain_name %>/dev
+ServerName dev.<%= @domain_name %>
+</VirtualHost>

@@ -1,0 +1,32 @@
+{
+    "name": "dataserver",
+    "env_run_lists": {
+        "dev": [
+
+        ],
+        "production": [
+
+        ]
+    },
+    "override_attributes": {
+        "rackspace_cloud_backup" : {
+            "api_key": "RACKSPACE_API_KEY_HERE",
+            "username":"RACKSPACE_USERNAME_HERE"
+        }
+    },
+    "run_list": [
+        "recipe[apt::default]",
+        "recipe[mysql::default]",
+        "recipe[mysql::server]",
+        "recipe[redisio::install]",
+        "recipe[redisio::enable]",
+        "recipe[rackspace-cloud-backup::default]",
+        "recipe[iptables::default]",
+        "recipe[iptables::secure_data_config]"
+    ],
+    "default_attributes": {
+    },
+    "json_class": "Chef::Role",
+    "description": "Base role for systems handling database traffic",
+    "chef_type": "role"
+}

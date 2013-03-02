@@ -1,0 +1,29 @@
+{
+  "recipes": {
+  },
+  "groupings": {
+  },
+  "attributes": {
+  },
+  "providing": {
+  },
+  "name": "ulimit",
+  "description": "Installs/Configures ulimit",
+  "conflicting": {
+  },
+  "suggestions": {
+  },
+  "platforms": {
+  },
+  "maintainer_email": "masterchefs@brightcove.com",
+  "maintainer": "Brightcove, Inc",
+  "version": "0.1.3",
+  "replacing": {
+  },
+  "recommendations": {
+  },
+  "dependencies": {
+  },
+  "long_description": "Description\n===========\n\nThis is a short-and-simple cookbook to provide a user_ulimit resource for overriding various ulimit settings. It places configured templates into /etc/security/limits.d/, named for the user the ulimit applies to.\n\nIt also provides a helper recipe (default.rb) for allowing ulimit overrides with the 'su' command on Ubuntu, which is disabled by default for some reason.\n\nRequirements\n============\n\nAdd to your repo, then depend upon this cookbook from wherever you need to override ulimits.\n\nAttributes\n==========\n\n* `node['ulimit']['pam_su_template_cookbook'] - Defaults to nil (current cookbook).  Determines what cookbook the su pam.d template is taken from\n\nUsage\n=====\n\nConsume the user_ulimit resource like so:\n\n    user_ulimit \"tomcat\" do\n      filehandle_limit 8192\n      process_limit 61504\n    end\n\n",
+  "license": "Apache 2.0"
+}
