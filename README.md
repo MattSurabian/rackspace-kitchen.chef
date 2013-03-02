@@ -4,6 +4,9 @@ Assembled by: Matt Surabian
 Email: matt@mattsurabian.com
 
 This is the repo that contains all the cookbooks and roles I use to configure my personal cloud servers on RackSpace.
+Personally I use a separate web and data server setup, so I can scale either behind a load balancer if necessary.
+I've added a LAMP server role for convenience to others that just want a quick way to leverage chef and create
+a standard LAMP environment within the RackSpace OpenCloud.
 
 Prerequisites
 =============
