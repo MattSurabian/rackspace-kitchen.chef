@@ -17,14 +17,15 @@ directories for dev and prod in /mnt/www/DOMAIN.  Add it to your run list after 
 has been installed.
 
 Example from role:
-```"custom_config":{
+````
+"custom_config":{
                "domains":[
                    "DOMAIN1.com",
                    "DOMAIN2.net",
                    "DOMAIN3.org"
                ]
     }
-```
+````
 
 License and Authors
 -------------------
