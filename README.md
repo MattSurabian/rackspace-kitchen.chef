@@ -7,6 +7,7 @@ This is the repo that contains all the cookbooks and roles I use to configure my
 
 Prerequisites
 =============
+ * Your workstation is setup with Chef http://docs.opscode.com/install_workstation.html
  * The RackSpace knife plugin `gem install knife-rackspace`
  * A hosted chef account at OpsCode
  * A a .chef folder in this repo containing your knife.rb file, your validator.pem file and your personal.pem file all downloadable from OpsCode
