@@ -77,15 +77,9 @@ knife node delete NODE-NAME (used in the server create method above)
 Roles
 =====
 The roles included cover my basic server setup and are in no way exhaustive.  You should modify the roles to suit your needs.
-Both of the roles provided here configure the RackSpace backup client, you must set values for your RackSpace username and API Key
+All of the roles provided here configure the RackSpace backup client, you must set values for your RackSpace username and API Key
 for the backup client to register itself properly.  Check the README inside the roles directory for more details on the provided roles.
 
-Overview
-========
-
-Every Chef installation needs a Chef Repository. This is the place where cookbooks, roles, config files and other artifacts for managing systems with Chef will live. We strongly recommend storing this repository in a version control system such as Git and treat it like source code.
-
-While we prefer Git, and make this repository available via GitHub, you are welcome to download a tar or zip archive and use your favorite version control system to manage the code.
 
 Repository Directories
 ======================
