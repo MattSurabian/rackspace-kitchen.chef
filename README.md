@@ -80,6 +80,10 @@ The roles included cover my basic server setup and are in no way exhaustive.  Yo
 All of the roles provided here configure the RackSpace backup client, you must set values for your RackSpace username and API Key
 for the backup client to register itself properly.  Check the README inside the roles directory for more details on the provided roles.
 
+Passwords and Access
+====================
+The knife rackspace command will output the node's root password when the server has been configured.
+The mysql root password can be copied from the /etc/mysql/grants.sql file
 
 Repository Directories
 ======================
