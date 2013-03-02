@@ -6,6 +6,7 @@ directories inside /mnt/www/DOMAIN just provide a list of all the domains this s
 
 data_server.json
 ================
+````
 "run_list": [
         "recipe[apt::default]",
         "recipe[mysql::default]",
@@ -16,6 +17,7 @@ data_server.json
         "recipe[iptables::default]",
         "recipe[iptables::secure_data_config]"
 ]
+````
 
 This runlist updates the apt repository, installs mysql client and server, installs and enables redis,
 installs and configures the RackSpace backup client, installs IP tables and opens ports: 3306, 22, 6379.
@@ -23,6 +25,7 @@ installs and configures the RackSpace backup client, installs IP tables and open
 
 web_server.json
 ===============
+````
 "run_list": [
         "recipe[apt::default]",
         "recipe[apache2::default]",
@@ -38,6 +41,7 @@ web_server.json
         "recipe[iptables::default]",
         "recipe[iptables::secure_web_config]"
 ]
+````
 
 This is NOT configured by default to terminate SSL via https.
 
