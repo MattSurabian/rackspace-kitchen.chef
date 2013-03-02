@@ -1,5 +1,5 @@
 {
-    "name": "webserver",
+    "name": "lampserver",
     "env_run_lists": {
         "dev": [
 
@@ -42,6 +42,6 @@
     "default_attributes": {
     },
     "json_class": "Chef::Role",
-    "description": "Base role for systems handling HTTP traffic",
+    "description": "Base LAMP server role",
     "chef_type": "role"
 }

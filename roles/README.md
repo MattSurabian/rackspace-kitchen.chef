@@ -22,6 +22,31 @@ data_server.json
 This runlist updates the apt repository, installs mysql client and server, installs and enables redis,
 installs and configures the RackSpace backup client, installs IP tables and opens ports: 3306, 22, 6379.
 
+lamp_server.json
+================
+````
+"run_list": [
+        "recipe[apt::default]",
+        "recipe[apache2::default]",
+        "recipe[php::default]",
+        "recipe[php::module_mysql]",
+        "recipe[apache2::mod_php5]",
+        "recipe[apache2::mod_rewrite]",
+        "recipe[custom-config::setup_apache_conf]",
+        "recipe[mysql::default]",
+        "recipe[mysql::server]",
+        "recipe[git::default]",
+        "recipe[nodejs::default]",
+        "recipe[nodejs::npm]",
+        "recipe[rackspace-cloud-backup::default]",
+        "recipe[iptables::default]",
+        "recipe[iptables::secure_web_config]",
+        "recipe[iptables::secure_data_config]"
+    ],
+````
+This role is basically a combo of the web server and the data server.
+The LAMP server does NOT have redis installed by default.  Though the redis port is open.
+
 
 web_server.json
 ===============
