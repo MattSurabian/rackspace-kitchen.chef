@@ -13,7 +13,7 @@ Prerequisites
  * Your workstation is setup with Chef http://docs.opscode.com/install_workstation.html
  * The RackSpace knife plugin `gem install knife-rackspace`
  * A hosted chef account at OpsCode
- * A a .chef folder in this repo containing your knife.rb file, your validator.pem file and your personal.pem file all downloadable from OpsCode
+ * A .chef folder in this repo containing your knife.rb file, your validator.pem file and your personal.pem file all downloadable from OpsCode
  * Environment variables set for your RACKSPACE_USERNAME, and RACKSPACE_API_KEY.  I set them in my .bash_profile as follows
 
  ````
@@ -65,8 +65,8 @@ or for a lamp
 ````
 knife rackspace server create -r 'role[lampserver]' --server-name LampServer --node-name LampServer --image 5cebb13a-f783-4f8c-8058-c4182c724ccd --flavor 2
 ````
-If something goes wrong and you want to remove the server you can do through the GUI's in RackSpace
- AND OpsCode, or you can just use knife
+If something goes wrong and you want to remove the server you can do so through the GUI's in RackSpace
+ AND OpsCode, you can also use knife
 ````
 knife rackspace server list
 knife rackspace server delete <ID OF THE SERVER TO DELETE FROM THE LIST>
