@@ -9,10 +9,6 @@
         ]
     },
     "override_attributes": {
-        "rackspace_cloud_backup" : {
-            "api_key": "RACKSPACE_API_KEY_HERE",
-            "username":"RACKSPACE_USERNAME_HERE"
-        },
         "custom_config":{
             "domains":[
                 "DOMAIN1.com",
@@ -32,9 +28,9 @@
         "recipe[git::default]",
         "recipe[nodejs::default]",
         "recipe[nodejs::npm]",
-        "recipe[rackspace-cloud-backup::default]",
         "recipe[iptables::default]",
-        "recipe[iptables::secure_web_config]"
+        "recipe[rackspace-bootstrap::setup_rackspace_backup]",
+        "recipe[rackspace-bootstrap::setup_iptables_secure_web]"
     ],
     "default_attributes": {
     },

@@ -5,7 +5,7 @@
 
 # Apache directory for configuration files
 apache_conf_dir = "/etc/apache2/conf.d"
-apache_root_dir = "/mnt/www"
+apache_root_dir = "/mnt/ephemeral/www"
 
 # This config uses a non-standard apache directory to store files
 # create that root directory

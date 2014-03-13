@@ -1,6 +1,6 @@
 #
 # Cookbook Name:: rackspace-bootstrap
-# Recipe:: setup_rackspace-backup
+# Recipe:: setup_rackspace_backup
 # See readme for instructions on generating the encrypted data bag
 #
 
