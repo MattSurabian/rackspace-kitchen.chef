@@ -6,7 +6,7 @@ DEPENDENCIES
   mysql
   nodejs
   php
-  rackspacd-cloud-backup
+  rackspace-cloud-backup
     git: https://github.com/rackspace-cookbooks/rackspace-cloud-backup.git
     revision: 5e1f3901ebdf69ce750f34460a65b411c4a26123
   redisio
@@ -50,7 +50,7 @@ GRAPH
     windows (>= 0.0.0)
     xml (>= 0.0.0)
     yum-epel (>= 0.0.0)
-  rackspacd-cloud-backup (0.3.2)
+  rackspace-cloud-backup (0.3.2)
     apt (>= 0.0.0)
     yum (>= 0.0.0)
   redisio (1.7.1)
