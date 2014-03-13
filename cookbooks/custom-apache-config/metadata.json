@@ -1,29 +1,30 @@
 {
-  "recipes": {
-  },
-  "groupings": {
-  },
-  "attributes": {
-  },
-  "providing": {
-  },
-  "name": "custom-config",
-  "description": "Does custom server config",
-  "conflicting": {
-  },
-  "suggestions": {
-  },
+  "name": "custom-apache-config",
+  "description": "Does custom apache server config",
+  "long_description": "custom-apache-config Cookbook\n======================\nThis cookbook sets up a custom apache configuration\n\nRequirements\n------------\n#### cookbooks\n- 'apache2' - for set_apache_conf recipe\n\n\nUsage\n-----\n#### custom-config::setup_apache_conf\nSet a custon-config domains attribute on your role that is an array of domain names.\nWhen this recipe runs it will setup a custom conf file in apache and create root\ndirectories for dev and prod in /mnt/ephemeral/www/DOMAIN.  Add it to your run list after apache\nhas been installed.\n\nExample from role:\n````\n\"custom_config\":{\n               \"domains\":[\n                   \"DOMAIN1.com\",\n                   \"DOMAIN2.net\",\n                   \"DOMAIN3.org\"\n               ]\n    }\n````\n\nLicense and Authors\n-------------------\nAuthors: Matt Surabian\n",
+  "maintainer": "Matt Surabian",
+  "maintainer_email": "matt@mattsurabian.com",
+  "license": "All rights reserved",
   "platforms": {
   },
-  "maintainer_email": "matt@mattsurabian.com",
-  "maintainer": "Matt Surabian",
-  "version": "0.1.0",
-  "replacing": {
+  "dependencies": {
+    "apache2": ">= 0.0.0"
   },
   "recommendations": {
   },
-  "dependencies": {
+  "suggestions": {
   },
-  "long_description": "custom-config Cookbook\n======================\nThis cookbook sets up custom configurations\n\nRequirements\n------------\n#### packages\n- 'apache2' - This\n\nAttributes\n----------\n\n#### custom-config::setup_apache_conf\n<table>\n  <tr>\n    <th>Key</th>\n    <th>Type</th>\n    <th>Description</th>\n    <th>Default</th>\n  </tr>\n  <tr>\n    <td><tt>['custom-config']['domains']</tt></td>\n    <td>Array</td>\n    <td>An array of domains to setup vhost files and root directories for</td>\n    <td><tt>This should be defined by your role!</tt></td>\n  </tr>\n</table>\n\nUsage\n-----\n#### custom-config::setup_apache_conf\nSet a custon-config domains attribute on your role that is an array of domain names.\nWhen this recipe runs it will setup a custom conf file in apache and create root\ndirectories for dev and prod in /mnt/www/DOMAIN.  Add it to your run list after apache\nhas been installed.\n\nExample from role:\n```\"custom_config\":{\n            \"domains\":['domain1.com','domain2.com']\n        }\n```\n\nLicense and Authors\n-------------------\nAuthors: Matt Surabian\n",
-  "license": "All rights reserved"
+  "conflicting": {
+  },
+  "providing": {
+  },
+  "replacing": {
+  },
+  "attributes": {
+  },
+  "groupings": {
+  },
+  "recipes": {
+  },
+  "version": "0.1.0"
 }

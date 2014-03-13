@@ -24,7 +24,7 @@
         "recipe[php::module_mysql]",
         "recipe[apache2::mod_php5]",
         "recipe[apache2::mod_rewrite]",
-        "recipe[custom-config::setup_apache_conf]",
+        "recipe[custom-apache-config::setup_apache_conf]",
         "recipe[git::default]",
         "recipe[nodejs::default]",
         "recipe[nodejs::npm]",
