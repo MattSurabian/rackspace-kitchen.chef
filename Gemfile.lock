@@ -1,0 +1,172 @@
+GIT
+  remote: git://github.com/berkshelf/berkshelf.git
+  revision: 28a3bc9bcfb557ffa00cd033e9f2ccb18a31c3f4
+  specs:
+    berkshelf (3.0.0.beta7)
+      addressable (~> 2.3.4)
+      berkshelf-api-client (~> 1.1)
+      buff-config (~> 0.2)
+      buff-extensions (~> 0.4)
+      buff-shell_out (~> 0.1)
+      faraday (~> 0.8.5)
+      minitar (~> 0.5.4)
+      octokit (~> 2.6)
+      retryable (~> 1.3.3)
+      ridley (~> 2.3)
+      solve (>= 0.8.0)
+      thor (~> 0.18.0)
+
+GIT
+  remote: git://github.com/mitchellh/vagrant.git
+  revision: f9e418a92bb7704ff4e34e3d173901f17c4b700e
+  tag: v1.4.2
+  specs:
+    vagrant (1.4.2)
+      childprocess (~> 0.3.7)
+      erubis (~> 2.7.0)
+      i18n (~> 0.6.0)
+      log4r (~> 1.1.9)
+      net-scp (~> 1.1.0)
+      net-ssh (>= 2.6.6, < 2.8.0)
+
+GIT
+  remote: git://github.com/schisamo/vagrant-omnibus.git
+  revision: 354d86b97b23e2dda23544166106897edd886072
+  specs:
+    vagrant-omnibus (1.3.1)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    addressable (2.3.5)
+    amq-protocol (1.9.2)
+    berkshelf-api-client (1.1.1)
+      faraday (~> 0.8.5)
+    buff-config (0.4.0)
+      buff-extensions (~> 0.3)
+      varia_model (~> 0.1)
+    buff-extensions (0.5.0)
+    buff-ignore (1.1.1)
+    buff-ruby_engine (0.1.0)
+    buff-shell_out (0.1.1)
+      buff-ruby_engine (~> 0.1.0)
+    builder (3.2.2)
+    bunny (1.1.3)
+      amq-protocol (>= 1.9.2)
+    celluloid (0.15.2)
+      timers (~> 1.1.0)
+    celluloid-io (0.15.0)
+      celluloid (>= 0.15.0)
+      nio4r (>= 0.5.0)
+    chef (0.8.10)
+      bunny (>= 0.6.0)
+      erubis
+      extlib
+      json
+      mixlib-authentication (>= 1.1.0)
+      mixlib-cli (>= 1.1.0)
+      mixlib-config (>= 1.1.0)
+      mixlib-log (>= 1.1.0)
+      moneta
+      ohai (>= 0.5.0)
+    childprocess (0.3.9)
+      ffi (~> 1.0, >= 1.0.11)
+    configuration (1.3.4)
+    erubis (2.7.0)
+    excon (0.6.6)
+    extlib (0.9.16)
+    faraday (0.8.9)
+      multipart-post (~> 1.2.0)
+    ffi (1.9.3)
+    fog (0.8.2)
+      builder
+      excon (~> 0.6.1)
+      formatador (>= 0.1.3)
+      json
+      mime-types
+      net-ssh (>= 2.1.3)
+      nokogiri (>= 1.4.4)
+      ruby-hmac
+    formatador (0.2.4)
+    hashie (2.0.5)
+    i18n (0.6.9)
+    ipaddress (0.8.0)
+    json (1.8.1)
+    knife-github-cookbooks (0.1.8)
+      chef
+      launchy (~> 0.4.0)
+    knife-rackspace (0.5.12)
+      fog (~> 0.8.2)
+    launchy (0.4.0)
+      configuration (>= 0.0.5)
+      rake (>= 0.8.1)
+    log4r (1.1.10)
+    mime-types (2.1)
+    mini_portile (0.5.2)
+    minitar (0.5.4)
+    mixlib-authentication (1.3.0)
+      mixlib-log
+    mixlib-cli (1.4.0)
+    mixlib-config (2.1.0)
+    mixlib-log (1.6.0)
+    mixlib-shellout (1.3.0)
+    moneta (0.7.20)
+    multipart-post (1.2.0)
+    net-http-persistent (2.9.4)
+    net-scp (1.1.2)
+      net-ssh (>= 2.6.5)
+    net-ssh (2.7.0)
+    nio4r (1.0.0)
+    nokogiri (1.6.1)
+      mini_portile (~> 0.5.0)
+    octokit (2.7.2)
+      sawyer (~> 0.5.2)
+    ohai (6.20.0)
+      ipaddress
+      mixlib-cli
+      mixlib-config
+      mixlib-log
+      mixlib-shellout
+      systemu (~> 2.5.2)
+      yajl-ruby
+    rake (10.1.1)
+    retryable (1.3.5)
+    ridley (2.5.1)
+      addressable
+      buff-config (~> 0.2)
+      buff-extensions (~> 0.3)
+      buff-ignore (~> 1.1)
+      buff-shell_out (~> 0.1)
+      celluloid (~> 0.15)
+      celluloid-io (~> 0.15)
+      erubis
+      faraday (~> 0.8.4)
+      hashie (>= 2.0.2)
+      json (>= 1.7.7)
+      mixlib-authentication (>= 1.3.0)
+      net-http-persistent (>= 2.8)
+      retryable
+      solve (>= 0.4.4)
+      varia_model (~> 0.3)
+    ruby-hmac (0.4.0)
+    sawyer (0.5.3)
+      addressable (~> 2.3.5)
+      faraday (~> 0.8, < 0.10)
+    solve (0.8.2)
+    systemu (2.5.2)
+    thor (0.18.1)
+    timers (1.1.0)
+    varia_model (0.3.2)
+      buff-extensions (~> 0.2)
+      hashie (>= 2.0.2)
+    yajl-ruby (1.2.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  berkshelf!
+  knife-github-cookbooks
+  knife-rackspace
+  vagrant!
+  vagrant-omnibus!
