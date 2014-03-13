@@ -35,11 +35,14 @@ end
 default['redisio']['safe_install'] = true
 
 #Tarball and download related defaults
-default['redisio']['mirror'] = "https://redis.googlecode.com/files"
+default['redisio']['mirror'] = "http://download.redis.io/releases/"
 default['redisio']['base_name'] = 'redis-'
 default['redisio']['artifact_type'] = 'tar.gz'
-default['redisio']['version'] = '2.6.10'
+default['redisio']['version'] = '2.6.17'
 default['redisio']['base_piddir'] = '/var/run/redis'
+
+#Custom installation directory
+default['redisio']['install_dir'] = nil
 
 #Default settings for all redis instances, these can be overridden on a per server basis in the 'servers' hash
 default['redisio']['default_settings'] = {
@@ -79,6 +82,9 @@ default['redisio']['default_settings'] = {
   'noappendfsynconrewrite' => 'no',
   'aofrewritepercentage'   => '100',
   'aofrewriteminsize'      => '64mb',
+  'cluster-enabled'        => 'no',
+  'cluster-config-file'    => nil, # Defaults to redis instance name inside of template if cluster is enabled.
+  'cluster-node-timeout'   => 5,
   'includes'               => nil
 }
 
