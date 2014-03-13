@@ -8,6 +8,10 @@ Personally I use a separate web and data server setup, so I can scale either beh
 I've added a LAMP server role for convenience to others that just want a quick way to leverage chef and create
 a standard LAMP environment within the RackSpace OpenCloud.
 
+It has been updated to play nice with the latest Chef, use Berkshelf to control dependencies, and store RackSpace credentials in an encrypted data bag per best practices.
+
+Feel free to open issues in this repo or email me if you hit any roadblocks.
+
 Prerequisites
 =============
  * Your workstation is setup with Chef http://docs.opscode.com/install_workstation.html
