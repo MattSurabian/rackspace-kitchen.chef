@@ -58,7 +58,7 @@ We're going to put that key we generated in the prequisite section to good use! 
 
 But those days are gone, as storing creds like that may result in accidently committing credentials into version control. Encrypted data bags prevent that issue completely.  So let's get to it!
 
-1. Create your rightscale creds data bag `knife data bag create creds rackspace --secret-file .chef/encrypted_data_bag_secret`
+1. Create your Rackspace creds data bag `knife data bag create creds rackspace --secret-file .chef/encrypted_data_bag_secret`
 1. This will open an editor where you create a json object containing your credentials. It should look like this:
 
 ```
