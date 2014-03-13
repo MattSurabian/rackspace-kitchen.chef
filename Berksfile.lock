@@ -1,6 +1,7 @@
 DEPENDENCIES
   apache2
   apt
+  chef_handler
   git
   iptables
   mysql
