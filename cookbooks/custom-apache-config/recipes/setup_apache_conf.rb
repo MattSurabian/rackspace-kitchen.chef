@@ -21,7 +21,7 @@ end
 # a conf file with vhost information and separate directories
 # in /mnt/www/
 
-node['custom_config']['domains'].each do |domain|
+node['custom-apache-config']['domains'].each do |domain|
     directory "#{apache_root_dir}/#{domain}" do
         owner "www-data"
         group "root"

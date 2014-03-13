@@ -18,7 +18,7 @@ has been installed.
 
 Example from role:
 ````
-"custom_config":{
+"custom-apache-config":{
                "domains":[
                    "DOMAIN1.com",
                    "DOMAIN2.net",
