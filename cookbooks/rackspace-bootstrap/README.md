@@ -39,7 +39,8 @@ Upon exiting the editor your databag should be saved and uploaded to the chef se
 
 
 ### Cookbooks
-rackspace-cloud-backup
+ - rackspace-cloud-backup
+ - iptables
 
 
 Usage
@@ -48,9 +49,17 @@ Usage
 #### rackspace-bootstrap::default
 noop
 
-#### rackspace-bootstrap::setup-rackspace-backup
+#### rackspace-bootstrap::setup_rackspace_backup
 Uses the configured encrypted data bag credentials to instal and register the rackspace backup agent
 
+#### rackspace-bootstrap::setup_iptables_secure_data
+Uses iptables_rule to open ports: 3306, 22, 6379
+
+#### rackspace-bootstrap::setup_iptables_secure_web
+Uses iptables_tule to open ports: 80, 22
+
+#### Templates
+Templates are provided to aid in further iptable configuration see setup_iptables recipes to see how they can be used
 
 License and Authors
 -------------------
